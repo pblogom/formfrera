@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Pablo Gomez">
+    <meta name="generator" content="V1">
+    <title>Compra de productos - Frera</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+
+        @media (min-width: 768px) {
+
+        }
+
+
+    </style>
+
+
+    <!-- Custom styles for this template-->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+
+<body class="bg-light container">
+
+<main>
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="assets/frera.svg" alt="frera" width="100" height="100">
+        <h2 id="titulo"></h2>
+        <p class="lead" id="bajada"></p>
+    </div>
+
+    <div class="row ">
+        <div class="col-md-12 ">
+            <h4 class="mb-3" id="subtitulo1">Nuestros productos</h4>
+
+
+            <!--
+            FORMULARIO DE COMPRA
+            -->
+            <form id="contact" action="contacto3.php" method="post">
+
+                <div class="row g-3 align-items-center">
+                    <div class="mb-5">
+                        <ul class="list-group list-group-flush">
+
+                          <!-- 1 PRODUCTO: padstejidoslavanda -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art1"></h6>
+                                    <span class="text-muted" id="precio1"></span>
+                                </div>
+
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="padstejidoslavanda">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 2 PRODUCTO: padstejidosaqua -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art2"></h6>
+                                    <span class="text-muted" id="precio2"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="padstejidosaqua">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 3 PRODUCTO: padstoallalavanda -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art3"></h6>
+                                    <span class="text-muted" id="precio3"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="padstoallalavanda">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 4 PRODUCTO: padstoallaaqua -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art4"></h6>
+                                    <span class="text-muted" id="precio4"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="padstoallaaqua">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 5 PRODUCTO: almohadillatermicalavrom -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art5"></h6>
+                                    <span class="text-muted" id="precio5"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="almohadillatermicalavrom">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 6 PRODUCTO: almohadillatermicamentamanza -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art6"></h6>
+                                    <span class="text-muted" id="precio6"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="almohadillatermicamentamanza">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 7 PRODUCTO: esponjadeyute -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art7"></h6>
+                                    <span class="text-muted" id="precio7"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="esponjadeyute">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 8 PRODUCTO: bolsitajabonera -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art8"></h6>
+                                    <span class="text-muted" id="precio8"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="bolsitajabonera">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 9 PRODUCTO: bolsalechevegetal -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art9"></h6>
+                                    <span class="text-muted" id="precio9"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="bolsalechevegetal">
+                                        <option selected  value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 10 PRODUCTO: totebageconatural -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art10"></h6>
+                                    <span class="text-muted" id="precio10"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="totebageconatural">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 11 PRODUCTO: totebagecotostado -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art11"></h6>
+                                    <span class="text-muted" id="precio11"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="totebagecotostado" >
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 12 PRODUCTO: filtrosdecafe -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art12"></h6>
+                                    <span class="text-muted" id="precio12"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="filtrosdecafe">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 13 PRODUCTO: cepillodebamboo -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art13"></h6>
+                                    <span class="text-muted" id="precio13"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="cepillodebamboo">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                          <!-- 14 PRODUCTO: bolsasparaperros -->
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art14"></h6>
+                                    <span class="text-muted" id="precio14"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="bolsasparaperros">
+                                        <option value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                          <!-- 15 PRODUCTO: bolsasparaperrospack -->
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <h6 class="mb-0" id="art15"></h6>
+                                    <span class="text-muted" id="precio15"></span>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Cantidades" name="bolsasparaperrospack">
+                                        <option selected value="0">0</option>
+                                        <option value="1 unidad">1</option>
+                                        <option value="2 unidades">2</option>
+                                        <option value="3 unidades">3</option>
+                                        <option value="4 unidades">4</option>
+                                        <option value="5 unidades">5</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+     <!-- DATOS PERSONALES -->
+
+                        <hr class="my-4">
+
+
+                        <h4 class="mb-3">Tus datos</h4>
+
+                            <!-- 16 DATO: nombre -->
+
+                        <div class="col-md-6">
+                            <label class="form-label">Nombre completo</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="Nombre y apellido" value=""
+                                   required>
+                        </div>
+
+                            <!-- 17 DATO: email -->
+
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="yo@gmail.com" required>
+                        </div>
+
+                            <!-- 18 DATO: celular -->
+                        <div class="col-md-6">
+                            <label class="form-label">Celular</label>
+                            <input type="number" name="celular" class="form-control" placeholder="000000" required>
+
+                        </div>
+
+                            <!-- 19 DATO: instagram -->
+                        <div class="col-md-6">
+                            <label class="form-label">Instagram <span class="text-muted">(opcional)</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" name="instagram" class="form-control" placeholder="Usuario">
+                            </div>
+                        </div>
+
+                            <!-- 20 DATO: zonaderetiro -->
+                        <div class="col-12">
+                            <label class="form-label">Zona de retiro</label>
+                            <select class="form-select" aria-label="Default select example" name="zonaderetiro">
+                                <option selected>Seleccionar</option>
+                                <option value="San Fernando">San Fernando (zona norte)</option>
+                                <option value="Haedo">Haedo (zona oeste)</option>
+                                <option value="A coordinar">A coordinar</option>
+                            </select>
+                        </div>
+
+                        <!-- 21 DATO: pago -->
+                        <div class="col-12">
+                            <label class="form-label">Formas de pago</label>
+                            <select class="form-select" aria-label="Default select example" name="pago">
+                                <option >Seleccionar</option>
+                                <option value="Transferencia">Transferencia bancaria</option>
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Mercado pago">Mercado Pago</option>
+                            </select>
+                        </div>
+
+
+                        <hr class="my-4">
+
+     <!-- Final -->
+
+
+
+
+
+
+                <!--<div class="g-recaptcha mb-3 d-flex justify-content-center compact" data-sitekey="6LcnVv0aAAAAAMZCaspP_XoVs_bsDZVd_qEo48rS">
+                </div>-->
+                <button class="w-100 btn btn-primary btn-lg mb-3" type="submit">ENVIAR PEDIDO</button>
+
+
+
+            </form>
+
+
+        </div>
+    </div>
+</main>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2021 Frera - Seamos el cambio</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacidad</a></li>
+        <li class="list-inline-item"><a href="#">Términos</a></li>
+        <li class="list-inline-item"><a href="#">Contacto</a></li>
+    </ul>
+</footer>
+
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script src="form-validation.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</body>
+</html>
