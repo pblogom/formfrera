@@ -6,56 +6,56 @@
 require("class.phpmailer.php");
 require("class.smtp.php");
 
-// Valores enviados desde el formulario
-if ( !isset($_POST["padstejidoslavanda"]) || !isset($_POST["padstejidosaqua"]) || !isset($_POST["padstoallalavanda"]) || !isset($_POST["padstoallaaqua"]) || !isset($_POST["almohadillatermicalavrom"]) || !isset($_POST["almohadillatermicamentamanza"]) || !isset($_POST["esponjadeyute"]) || !isset($_POST["bolsitajabonera"]) || !isset($_POST["bolsalechevegetal"]) || !isset($_POST["totebageconatural"]) || !isset($_POST["totebagecotostado"]) || !isset($_POST["filtrosdecafe"]) || !isset($_POST["cepillodebamboo"]) || !isset($_POST["bolsasparaperros"]) || !isset($_POST["bolsasparaperrospack"]) || !isset($_POST["nombre"]) || !isset($_POST["email"]) || !isset($_POST["celular"]) || !isset($_POST["instagram"]) || !isset($_POST["zonaderetiro"]) || !isset($_POST["pago"]))
 
-{
-    die ("Es necesario completar todos los datos del formulario");
-}
+//VARIABLES
+$pads_tejidos_lavanda = $_POST["padstejidoslavanda"];
+$pads_tejido_saqua = $_POST["padstejidosaqua"];
+$pads_toalla_lavanda = $_POST["padstoallalavanda"];
+$pads_toalla_aqua = $_POST["padstoallaaqua"];
+$almohadilla_termica_lavrom = $_POST["almohadillatermicalavrom"];
+$almohadilla_termica_mentamanza = $_POST["almohadillatermicamentamanza"];
+$esponja_de_yute = $_POST["esponjadeyute"];
+$bolsita_jabonera = $_POST["bolsitajabonera"];
+$bolsa_lechevegetal = $_POST["bolsalechevegetal"];
+$totebag_eco_natural = $_POST["totebageconatural"];
+$totebag_eco_tostado = $_POST["totebagecotostado"];
+$filtros_decafe = $_POST["filtrosdecafe"];
+$cepillo_de_bamboo = $_POST["cepillodebamboo"];
+$bolsas_para_perros = $_POST["bolsasparaperros"];
+$bolsas_para_perros_pack = $_POST["bolsasparaperrospack"];
+$nombre = $_POST["nombre"];
+$email = $_POST["email"];
+$celular = $_POST["celular"];
+$instagram = $_POST["instagram"];
+$zona_de_retiro = $_POST["zonaderetiro"];
+$pago = $_POST["pago"];
 
-$var1 ="Pads tejidos x2 lavanda: ";
-$var2 ="Pads tejidos x2 Aqua: ";
-$var3 ="Pads toalla x3 lavanda: ";
-$var4 ="Pads toalla x3 Aqua: ";
-$var5 ="Almohadillas térmicas lavanda romero: ";
-$var6 ="Almohadillas térmicas menta manzanilla: ";
-$var7 ="Esponja yute: ";
-$var8 ="Bolsita jabón ducha: ";
-$var9 ="Bolsa leche vegetal: ";
-$var10 ="Totebags ecológica natural: ";
-$var11 ="Totebags ecológica tostado: ";
-$var12 ="Filtros de café N4 x2: ";
-$var13 ="Cepillo de bamboo: ";
-$var14 ="Bolsas biodegradables para perros: ";
-$var15 ="Bolsas biodegradables para perros x8: ";
+//DICCIONARIO
+
+$cantidades = [
+	"Pads tejidos x2 lavanda: " => $pads_tejidos_lavanda,
+	"Pads tejidos x2 Aqua: " => $pads_tejidos_aqua,
+    "Pads toalla x3 lavanda: " => $pads_toalla_lavanda,
+    "Pads toalla x3 Aqua: " => $pads_toalla_aqua,
+    "Almohadillas térmicas lavanda romero: " => $almohadilla_termica_lavrom,
+    "Almohadillas térmicas menta manzanilla: " => $almohadilla_termica_mentamanza,
+    "Esponja de yute: " => $esponja_de_yute,
+    "Bolsita jabónera: " => $bolsita_jabonera ,
+    "Bolsa leche vegetal: " => $bolsa_lechevegetal ,
+    "Totebags ecológica natural: " => $totebag_eco_natural ,
+    "Totebags ecológica tostado: " => $totebag_eco_tostado ,
+    "Filtros de café N4 x2: " => $filtros_decafe ,
+    "Cepillo de bamboo: " => $cepillo_de_bamboo ,
+    "Bolsas biodegradables para perros: " => $bolsas_para_perros ,
+    "Bolsas biodegradables para perros x8: " => $bolsas_para_perros_pack ,
+];
+
 $var16 ="nombre: ";
 $var17 ="email: ";
 $var18 ="celular: ";
 $var19 ="instagram: ";
 $var20 ="zonaderetiro: ";
 $var21 ="pago: ";
-
-$padstejidoslavanda = $_POST["padstejidoslavanda"];
-$padstejidosaqua = $_POST["padstejidosaqua"];
-$padstoallalavanda = $_POST["padstoallalavanda"];
-$padstoallaaqua = $_POST["padstoallaaqua"];
-$almohadillatermicalavrom = $_POST["almohadillatermicalavrom"];
-$almohadillatermicamentamanza = $_POST["almohadillatermicamentamanza"];
-$esponjadeyute = $_POST["esponjadeyute"];
-$bolsitajabonera = $_POST["bolsitajabonera"];
-$bolsalechevegetal = $_POST["bolsalechevegetal"];
-$totebageconatural = $_POST["totebageconatural"];
-$totebagecotostado = $_POST["totebagecotostado"];
-$filtrosdecafe = $_POST["filtrosdecafe"];
-$cepillodebamboo = $_POST["cepillodebamboo"];
-$bolsasparaperros = $_POST["bolsasparaperros"];
-$bolsasparaperrospack = $_POST["bolsasparaperrospack"];
-$nombre = $_POST["nombre"];
-$email = $_POST["email"];
-$celular = $_POST["celular"];
-$instagram = $_POST["instagram"];
-$zonaderetiro = $_POST["zonaderetiro"];
-$pago = $_POST["pago"];
 
 
 
@@ -84,8 +84,14 @@ $mail->From = $email; // Email desde donde envío el correo.
 $mail->FromName = $nombre;
 $mail->AddAddress($emailDestino); // Esta es la dirección a donde enviamos los datos del formulario
 
-$mail->Subject = "Compras sitio web"; // Este es el titulo del email.
-$mensajeHtml = "$var1".($padstejidoslavanda)."<br />"."$var2".($padstejidosaqua)."<br />"."$var3".($padstoallalavanda)."<br />"."$var4".($padstoallaaqua)."<br />"."$var5".($almohadillatermicalavrom)."<br />"."$var6".($almohadillatermicamentamanza)."<br />"."$var7".($esponjadeyute)."<br />"."$var8".($bolsitajabonera)."<br />"."$var9".($bolsalechevegetal)."<br />"."$var10".($totebageconatural)."<br />"."$var11".($totebagecotostado)."<br />"."$var12".($filtrosdecafe)."<br />"."$var13".($cepillodebamboo)."<br />"."$var14".($bolsasparaperros)."<br />"."$var15".($bolsasparaperrospack)."<br />"."$var16".($nombre)."<br />"."$var17".($email)."<br />"."$var18".($celular)."<br />"."$var19".($instagram)."<br />"."$var20".($zonaderetiro)."<br />"."$var21".($pago) ;
+$mail->Subject = "Nueva compra"; // Este es el titulo del email.
+$mensaje_html = "";
+foreach ($cantidades as $producto => $cantidad) {
+	if ($cantidad > 0) {
+        $mensaje_html .= ($producto).": ".($cantidad)."<br/>";
+    }
+}."$var16".($nombre)."<br />"."$var17".($email)."<br />"."$var18".($celular)."<br />"."$var19".($instagram)."<br />"."$var20".($zonaderetiro)."<br />"."$var21".($pago);
+
 $mail->Body = "{$mensajeHtml} <br /><br /> Frera.com.ar <br />"; // Texto del email en formato HTML"<br />"
 $mail->AltBody = "{$comentario} \n\n <br /><br /> Frera.com.ar"; // Texto sin formato HTML
 // FIN - Modificando //
